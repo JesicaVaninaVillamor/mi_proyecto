@@ -24,9 +24,7 @@ h1 {
     font-size: 70px ;
     text-align: center ;
 }
-
 /*BODY ESTRUCTURA*/
-
 /* GRID */
 #body {
     margin: 0;
@@ -40,20 +38,17 @@ h1 {
         "main"
         "footer";
 }
-
 /* HEADER ESTRUCTURA (aplique bootstrap) */
 #header {
     grid-area: header;
     object-fit: cover;
 }
-
 /* ESTRUCTURA MAIN */
 #main {
     margin: 0;
     grid-area: main;
     padding-top: 5px;
 }
-
 /* ENCABEZADO DE IMGENES CON GRID*/
 #container-img {
     display: grid;
@@ -62,7 +57,6 @@ h1 {
     height: 200px;
     padding-bottom: 500px;
 }
-
 .box-img {
     display: flex;
     justify-content: center;
@@ -74,31 +68,26 @@ h1 {
     min-height: 150px;
     overflow: hidden;
 }
-
 .box-img:nth-child(3) {
     grid-column: 2 / 3;
     grid-row: span 2;  
 }
-
 .box-img img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
-
 /* DESTACADOS */
 #boxDestacado {
     padding: 20px;
     background-color: #f9f9f9;
     text-align: center;
 }
-
 #boxDestacado h2 {
     font-size: 2em;
     color: #333;
     margin-bottom: 20px;
 }
-
 /* FOLLTEOS CON FLEX */
 .boxFolleto {
     display: flex;
@@ -108,7 +97,6 @@ h1 {
     flex-wrap: wrap;
     margin: 30px 0;
 }
-
 .folleto {
     display: flex;
     flex-direction: column;
@@ -116,7 +104,6 @@ h1 {
     text-align: center;
     max-width: 300px;
 }
-
 .folleto img {
     display: block;
     margin: 20px auto;
@@ -127,11 +114,9 @@ h1 {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease; 
 }
-
 .folleto img:hover {
     transform: scale(1.05);
 }
-
 .folleto p {
     padding: 5px 15px;
     margin-top: 10px;       
@@ -140,7 +125,6 @@ h1 {
     border-style: double;
     border-radius: 10px;
 }
-
 /* GALERIA DE PRODUCTOS CON GRID*/ 
 .gallery-container {
     font-family: Arial, sans-serif;
@@ -152,7 +136,6 @@ h1 {
     justify-items: center;
     padding: 10px;
 }
-
 .product {
     background-color: #f4f4f4;
     border-radius: 8px;
@@ -162,29 +145,24 @@ h1 {
     padding: 10px;
     transition: transform 0.3s;
 }
-
 .product img {
     width: 100%;
     height: 300px; 
     border-radius: 8px;
 }
-
 .product h3 {
     margin-top: 10px;
     font-size: 1.2em;
     color: #333;
 }
-
 .product p {
     margin-top: 5px;
     font-size: 1.1em;
     color: #555;
 }
-
 .product:hover {
     transform: translateY(-10px);
 }
-
 .buy-button {
     background-color: #438652;
     color: white;
@@ -196,23 +174,19 @@ h1 {
     transition: background-color 0.3s ease;
     width: 100%;
 }
-
 .buy-button:hover {
     background-color: #59b456;
 }
-
 @media screen and (max-width: 768px) {
     .gallery-container {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
 }
-
 @media screen and (max-width: 480px) {
     .gallery-container {
         grid-template-columns: 1fr;
     }
 }
-
 /* CONTACTO */
 .contacto {
     display: flex;
@@ -223,7 +197,6 @@ h1 {
     padding: 20px;
     background-color: white;
 }
-
 .container {
     background-color: white;
     padding: 30px;
@@ -233,18 +206,15 @@ h1 {
     max-width: 600px;
     margin: 20px;
 }
-
 form {
     width: 40%;
 }
-
 label {
     font-size: 1.2em;
     color: #292929;
     margin-bottom: 8px;
     display: block;
 }
-
 input, textarea {
     width: 100%;
     padding: 15px;
@@ -253,12 +223,10 @@ input, textarea {
     border-radius: 8px;
     font-size: 1.2em;
 }
-
 textarea {
     resize: vertical;
     min-height: 120px;
 }
-
 button {
     display: flex;
     justify-content: center;
@@ -272,11 +240,9 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
 button:hover {
     background-color: #b4bbb4;
 }
-
 /* NOSOTROS */
 .presentation {
     background-color: #fff;
@@ -286,18 +252,15 @@ button:hover {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-
 .presentation p {
     font-size: 1.1em;
     line-height: 1.6;
     color: #555;
     margin-bottom: 15px;
 }
-
 .presentation strong {
     color: #ff7b00;
 }
-
 @media screen and (max-width: 768px) {
     .presentation {
         padding: 15px;
@@ -309,7 +272,6 @@ button:hover {
         font-size: 1em;
     }
 }
-
 /* GUI DE TALLES */
 .talles {
     margin: 0;
@@ -318,37 +280,30 @@ button:hover {
     display: flex;
     flex-direction: column;    
 }
-
 .talles h1 {
     color: #333;
 }
-
 .talles p {
     color: #333;
     font-size: 1.3em;
     margin-bottom: 20px;
 }
-
 /* ESTILOS DE LA TABLA DE TALLES */
 th, td {
     padding: 10px;
     text-align: center;
     border: 1px solid #ddd;
 }
-
 th {
     background-color: #767777;
     color: white;
 }
-
 tr:nth-child(even) {
     background-color: #f9f9f9;
 }
-
 tr:hover {
     background-color: #f1f1f1;
 }
-
 /* FOOTER ESTRUCTURA*/
 #footer {
     grid-area: footer;
@@ -361,19 +316,16 @@ tr:hover {
     width: 100%;
     height: auto;
 }
-
 #footer .footerLogo img {
     max-width: 100px; 
     width: 100%;      
     height: auto; 
 }
-
 .footerNav {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
-
 .footerNav ul {
     display: flex;
     flex-direction: column;
@@ -382,7 +334,6 @@ tr:hover {
     padding: 0;
     justify-content: center;
 }
-
 .footerNav a {
     display: flex;
     flex-direction: column;
@@ -392,28 +343,23 @@ tr:hover {
     text-decoration: none;
     transition: color 0.3s ease, text-shadow 0.3s ease;
 }
-
 .footerNav a:hover {
     color: white;
     text-shadow: 0 0 10px gray;
 }
-
 .footerNav-copy h2 {
     font-size: small;
 }
-
 .footerRedes {
     max-width: 100px; 
     width: 100%;      
     height: auto;
 }
-
 .footerRedes i {
     color: black;
     font-size: 40px;
     transition: color 0.3s ease;
 }
-
 .footerRedes i:hover {
     color: whitesmoke;
 }
